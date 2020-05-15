@@ -22,5 +22,17 @@ namespace WordCounter.Models
     {
       _wordList.Clear();
     }
+    public int FindRepeats()
+    {
+      int count = 0;
+      for (int i = 0; i < _wordList.Count; i++)
+      {
+        if (_wordList[i] == SearchTerm)
+        {
+          count++;
+        }
+      }
+      return count;
+    }
   }
 }

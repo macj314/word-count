@@ -39,10 +39,11 @@ namespace WordCounter.Tests
 
       Assert.AreEqual(result, newCounter.GetAll());
     }
-    // [TestMethod]
-    // public void FindRepeats_ReturnsTheCorrectNumberOfRepeatingWordsInSentence_Int()
-    // {
-
-    // }
+    [TestMethod]
+    public void FindRepeats_ReturnsTheCorrectNumberOfRepeatingWordsInSentence_Int()
+    {
+      Counter newCounter = new Counter("cats", "several cats are playing with other cats");
+      Assert.AreEqual(2, newCounter.FindRepeats());
+    }
   }
 }
