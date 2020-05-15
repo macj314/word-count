@@ -16,7 +16,11 @@ namespace WordCounter.Models
     }
     public string GetAll()
     {
-      return $"Your search word is: '{SearchTerm}' and your sentence is: '{Sentence}'" + _wordList;
+      return $"Your search word is: '{SearchTerm}' and your sentence is: '{Sentence}'";
+    }
+    public static void ClearAll()
+    {
+      _wordList.Clear();
     }
   }
 }
