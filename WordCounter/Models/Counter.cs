@@ -9,5 +9,9 @@ namespace WordCounter.Models
       SearchTerm = searchterm;
       Sentence = sentence;
     }
+    public string GetAll()
+    {
+      return $"Your search word is: '{SearchTerm}' and your sentence is: '{Sentence}'";
+    }
   }
 }
