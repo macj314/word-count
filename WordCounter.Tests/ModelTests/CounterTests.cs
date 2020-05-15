@@ -32,7 +32,7 @@ namespace WordCounter.Tests
 
       string result = "Your search word is: 'cat' and your sentence is: 'cat in play'";
 
-      Assert.AreEqual(result, Counter.GetAll());
+      Assert.AreEqual(result, newCounter.GetAll());
     }
   }
 }
