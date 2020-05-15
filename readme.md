@@ -21,7 +21,10 @@ This program requires .NET to be installed. It uses the MSTest tool to test poss
 
 ### Behaviors to Test:
 
-1. Create an instance of the Counter class.
+1. Create an instance of the Counter class with an empty constructor.
+2. Create a property of the Counter class. It will be a string to store the search word.
+3. Create a property of the Counter class. It will be a list of strings to store the words that will be searched through.
+4. 
 
 ## Known Bugs
 
