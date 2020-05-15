@@ -23,9 +23,9 @@ This program requires .NET to be installed. It uses the MSTest tool to test poss
 
 1. Create an instance of the Counter class with an empty constructor.
 2. Create a property of the Counter class. It will be a string to store the search word.<br/> Input: test<br/> Expected Output: Counter.searchTerm = "test"
-3. Create a property of the Counter class. It will be a list of strings to store the words that will be searched through.<br/> Input:test sentence<br/> Expected Output: Counter.wordList = {"test", "sentence"}
+3. Create a property of the Counter class. It will be a string that will be used to store the sentence that will be searched through.<br/> Input:test sentence<br/> Expected Output: Counter.sentence = "test sentence"
 4. Create a method that returns a message displaying the Counter class's properties.<br/> Input: test, test sentence<br/> Output: Your search word is: test and your sentence is: test sentence.
-5. Create a method that compares searchTerm with the contents of wordList. If there are any matches, add to a counter. Return the counter to represent the number of matches in the sentence.<br/> Input: cat, I'm a cat person. A cat is the best.<br/> Output: 2
+5. Create a method that compares searchTerm with the contents of sentence. If there are any matches, add to a counter. Return the counter to represent the number of matches in the sentence.<br/> Input: cat, I'm a cat person. A cat is the best.<br/> Output: 2
 6. Test compare method to only return the number of exact matches.<br/>Input: dog, A dog is a dogMA<br/>Output: 1
 7. Test compare method to no be case sensetive, and to ignore punctuations.<br/>Input: turtles, A Turtle's turtle is turtling when turtled.<br/>Output: 1
 
