@@ -2,9 +2,10 @@ namespace WordCounter.Models
 {
   public class Counter
   {
-    public Counter()
+    public string SearchTerm { get; set; }
+    public Counter(string searchterm)
     {
-      
+      SearchTerm = searchterm;
     }
   }
 }
