@@ -48,7 +48,7 @@ namespace WordCounter.Tests
     [TestMethod]
     public void FindRepeats_IgnoresCaseAndPunctuation_Int()
     {
-      Counter newCounter = new Counter("dogs", "dogs Dogs DOG's dogs.");
+      Counter newCounter = new Counter("dogs", "dogs, DOGS dogs. dogs'");
       Assert.AreEqual(4, newCounter.FindRepeats());
     }
   }
