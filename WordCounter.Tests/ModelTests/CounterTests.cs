@@ -45,5 +45,11 @@ namespace WordCounter.Tests
       Counter newCounter = new Counter("cats", "several cats are playing with other cats");
       Assert.AreEqual(2, newCounter.FindRepeats());
     }
+    [TestMethod]
+    public void FindRepeats_IgnoresCaseAndPunctuation_Int()
+    {
+      Counter newCounter = new Counter("dogs", "dogs Dogs DOG's dogs.");
+      Assert.AreEqual(4, newCounter.FindRepeats());
+    }
   }
 }
