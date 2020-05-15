@@ -25,14 +25,19 @@ namespace WordCounter.Tests
       Assert.AreEqual(searchTerm, newCounter.SearchTerm);
       Assert.AreEqual(sentence, newCounter.Sentence);
     }
-    [TestMethod]
-    public void GetAll_ReturnsAStringDisplayingSearchTermAndSentence_String()
-    {
-      Counter newCounter = new Counter("cat", "cat in play");
+    // [TestMethod]
+    // public void GetAll_ReturnsAStringDisplayingSearchTermAndSentence_String()
+    // {
+    //   Counter newCounter = new Counter("cat", "cat in play");
 
-      string result = "Your search word is: 'cat' and your sentence is: 'cat in play'";
+    //   string result = "Your search word is: 'cat' and your sentence is: 'cat in play'";
 
-      Assert.AreEqual(result, newCounter.GetAll());
-    }
+    //   Assert.AreEqual(result, newCounter.GetAll());
+    // }
+    // [TestMethod]
+    // public void FindRepeats_ReturnsTheCorrectNumberOfRepeatingWordsInSentence_Int()
+    // {
+
+    // }
   }
 }
